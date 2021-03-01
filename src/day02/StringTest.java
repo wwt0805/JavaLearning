@@ -29,5 +29,29 @@ public class StringTest
         boolean b1 = true;
         String info1 = info + b1;// +: 连接运算
         System.out.println(info1);
+
+        //*********************
+        // 练习1
+        char c = 'a'; // 'a':97, 'A':65
+        int num = 10;
+        String str = "hello";
+        System.out.println(c + num + str);   // 107hello
+        System.out.println(c + str + num);   // ahello10
+        System.out.println(c + (num + str)); // a10hello
+        System.out.println((c + num) + str); // 107hello
+        System.out.println(str + num + c);   // hello10a
+
+        //练习2
+        //希望输出"*    （四个空格）*"
+        System.out.println("*   *");           // *   *
+        System.out.println('*' + '\t' + '*');  // 一个数 char对应的ascii码
+        System.out.println('*' + "\t" + '*');  // *   *
+        System.out.println('*' + '\t' + "*");  // 一个数*
+        System.out.println('*' + ('\t' + "*"));// *   *
+
+//        char a = '*';
+//        String b = " ";
+//        String d = a + (b * 4) + a;
+//        System.out.println(d);
     }
 }
