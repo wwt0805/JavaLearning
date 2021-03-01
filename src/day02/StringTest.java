@@ -48,10 +48,5 @@ public class StringTest
         System.out.println('*' + "\t" + '*');  // *   *
         System.out.println('*' + '\t' + "*");  // 一个数*
         System.out.println('*' + ('\t' + "*"));// *   *
-
-//        char a = '*';
-//        String b = " ";
-//        String d = a + (b * 4) + a;
-//        System.out.println(d);
     }
 }
