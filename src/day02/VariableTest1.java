@@ -76,7 +76,19 @@ public class VariableTest1
         char c6 = '\u0043';
         System.out.println(c6);
 
-//        char c6 = '\u0043';
-//        System.out.println(c6);
+        // 4.布尔型：boolean
+        // 只能取两个值之一：true、false
+        // 常常在条件判断、循环结构中使用
+        boolean bb1 = true;
+         System.out.println(bb1);
+
+        boolean isMarried = true;
+        if(isMarried)
+        {
+            System.out.println("你就不能来参加单身party了！\n很遗憾");
+        }
+        else {
+             System.out.println("你可以多弹弹女朋友！");
+            }
     }
 }
