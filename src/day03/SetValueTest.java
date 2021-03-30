@@ -29,6 +29,20 @@ public class SetValueTest
         int num2 = 12;
         num2 %= 5; // num 2 = num2 % 5;
         System.out.println(num2);
+
+        short s1 = 10;
+        // s1 = s1 + 2; // 编译失败
+        s1 += 2; // 不会改变变量本身的数据类型
+        System.out.println(s1);
+
+        // 开发中，如果希望变量实现+2的操作，有几种方法？（前提： int num = 10;)
+        // 方式一：num = num + 2;
+        // 方式二：num += 2;  (推荐）
+
+        // 开发中，如果希望变量实现+1的操作，有几种方法？（前提： int num = 10;)
+        // 方式一：num = num + 1;
+        // 方式二：num += 1;
+        // 方式三：num++; （推荐）
     }
 
 }
