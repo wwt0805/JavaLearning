@@ -13,6 +13,9 @@ package day03;
  * 根据条件表达式的真或者假决定执行表达式1还是2；
  * 如果是true执行表达式1，若是false则执行表达式2
  * 表达式1和表达式2要求是一致的，即有一个统一类型
+ *
+ * 3、凡是能用三元运算符的都可以用if-else，反之不成立；
+ * 4、如果一个问题即可用三元也可以用if-else, 应该用三元，因为简洁、效率高，运算符运算效率大于流程控制语句
  */
 public class SanYuan {
     public static void main(String[] args)
@@ -40,6 +43,16 @@ public class SanYuan {
 
         int max3 = (((n1 > n2) ? n1 : n2) > n3) ? ((n1 > n2) ? n1 : n2) : n3;  // 可读性，太差不推荐
         System.out.println("三个数中的最大值为：" + max3);
+
+        // 改写成if—else
+        if(m > n)
+        {
+            System.out.println(m);
+        }
+        else
+        {
+            System.out.println(n);
+        }
 
     }
 }
