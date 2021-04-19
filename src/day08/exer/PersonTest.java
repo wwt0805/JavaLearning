@@ -20,6 +20,12 @@ class PersonTest
         p1.showAge();
         int newAge = p1.addAge(2);
         System.out.println("p1's new age is: " + newAge);
+
+        // *********
+        Person p2 = new Person();
+        p2.showAge();
+        int newAge1 = p2.addAge(10);
+        System.out.println(newAge1);
     }
 
 }
